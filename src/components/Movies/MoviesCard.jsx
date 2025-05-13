@@ -1,6 +1,6 @@
 import React from 'react';
 import star from '../../assets/icons/star.png';
-import img_film from '../../assets/ImageFılm.jpg';
+import imgFilm from '../../assets/ImageFilm.jpg';
 
 const MoviesCard = (props) => {
   //TODO
@@ -16,7 +16,7 @@ const MoviesCard = (props) => {
         <img src={star} alt="star" />
         <img src={star} alt="star" />
       </div>
-      <img src={img_film} alt="img_film" />
+      <img src={imgFilm} alt="imgFilm" />
     </a>
   );
 };

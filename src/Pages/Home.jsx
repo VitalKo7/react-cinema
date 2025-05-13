@@ -1,7 +1,8 @@
 import React from 'react';
 import Banner from '../components/Home/Banner';
-import Filter from '../components/Home/Filter';
+import Filter from '../components/Filter';
 import MoviesList from '../components/Movies/MoviesList';
+import MoviesScroll from '@components/MoviesScroll';
 
 const Home = () => {
   return (
@@ -11,12 +12,7 @@ const Home = () => {
       <div className="container">
         <Filter />
         <MoviesList />
-
-        <div className="movies__scroll">
-          <button>
-            <i className="fa-solid fa-arrow-down"></i>
-          </button>
-        </div>
+        <MoviesScroll />
       </div>
     </>
   );
