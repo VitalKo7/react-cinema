@@ -5,6 +5,8 @@
     "checkJs": true,
     "jsx": "react",
     "baseUrl": "src",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
     "paths": {
       "@components/*": ["components/*"],
       "@assets/*": ["assets/*"],

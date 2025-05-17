@@ -1,17 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/icons/pngwing.com.png';
 import heart from '../../assets/icons/icons8-червы-100.png';
 
 const Header = () => {
   return (
     <header>
-      <a className="header__logo-flex" href="./index.html">
+      <Link className="header__logo-flex" to="/">
         <img src={logo} alt="logo" />
         <div className="header__logo-flex_sitename">
           <p>REACT</p>
           <p>CINEMA</p>
         </div>
-      </a>
+      </Link>
       <ul className="header__navbar-flex">
         <a href="./index.html">Home</a>
         <a href="./favorites.html">Favorites</a>

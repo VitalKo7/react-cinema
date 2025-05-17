@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Header from './components/Layout/Header';
 import Footer from './components/Layout/Footer';
@@ -10,13 +11,17 @@ import Movie from '@pages/Movie';
 function App() {
   return (
     <>
-      <Header />
+      <BrowserRouter>
+        <Header />
 
-      {/* <Home /> */}
-      <Favourites />
-      {/* <Movie /> */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/favourites" element={<Favourites />} />
+          <Route path="/movie" element={<Movie />} />
+        </Routes>
 
-      <Footer />
+        <Footer />
+      </BrowserRouter>
     </>
   );
 }
