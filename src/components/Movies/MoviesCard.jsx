@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import star from '../../assets/icons/star.png';
 import imgFilm from '../../assets/ImageFilm.jpg';
 
@@ -19,6 +20,10 @@ const MoviesCard = (props) => {
       <img src={imgFilm} alt="imgFilm" />
     </a>
   );
+};
+
+MoviesCard.propTypes = {
+  name: PropTypes.string.isRequired,
 };
 
 export default MoviesCard;

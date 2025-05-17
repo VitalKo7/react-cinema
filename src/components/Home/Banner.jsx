@@ -1,6 +1,6 @@
 import React from 'react';
 import header_banner from '../../assets/background.jpg';
-import video from '../../assets/videos/Titanic, 1997 - Trailer (1080p).mp4';
+import video from '../../assets/videos/Titanic-1997-Trailer.mp4';
 
 const Banner = () => {
   return (
