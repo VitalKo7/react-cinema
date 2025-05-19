@@ -4,7 +4,7 @@ import star from '../../assets/icons/star.png';
 import imgFilm from '../../assets/ImageFilm.jpg';
 import { Link } from 'react-router-dom';
 
-const MoviesCard = (props) => {
+const MoviesCard = props => {
   return (
     <Link className="movies__card" to="/movie">
       <div className="movies__card-rating">
