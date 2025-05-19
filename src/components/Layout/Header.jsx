@@ -13,13 +13,15 @@ const Header = () => {
           <p>CINEMA</p>
         </div>
       </Link>
+
       <ul className="header__navbar-flex">
-        <a href="./index.html">Home</a>
-        <a href="./favorites.html">Favorites</a>
-        <a href="#categoryes">Movies</a>
-        <a href="#categoryes">FAQ</a>
-        <a href="#categoryes">Help</a>
+        <Link to="/">Home</Link>
+        <Link to="/favourites">Favorites</Link>
+        <Link to="#categoryes">Movies</Link>
+        <Link to="#categoryes">FAQ</Link>
+        <Link to="#categoryes">Help</Link>
       </ul>
+
       <div className="header__auth-flex">
         <div className="favorites__movies">
           <img src={heart} alt="heart" />
