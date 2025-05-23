@@ -9,7 +9,8 @@ export default defineConfig({
     alias: {
       '@assets': path.resolve(__dirname, 'src/assets'),
       '@components': path.resolve(__dirname, 'src/components'),
-      '@pages': path.resolve(__dirname, 'src/Pages'),
+      '@Pages': path.resolve(__dirname, 'src/Pages'),
+      '@Redux': path.resolve(__dirname, './src/Redux'),
     },
   },
 });

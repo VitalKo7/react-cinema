@@ -2,18 +2,20 @@
   "compilerOptions": {
     "target": "es6",
     "module": "esnext",
-    "checkJs": true,
+    "checkJs": false,
     "jsx": "react",
     "baseUrl": "src",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "paths": {
-      "@components/*": ["components/*"],
       "@assets/*": ["assets/*"],
-      "@pages/*": ["Pages/*"]
+      "@components/*": ["components/*"],
+      "@Pages/*": ["Pages/*"],
+      "@Redux/*": ["Redux/*"]
     },
     "noUnusedLocals": true,
     "noUnusedParameters": true
   },
-  "include": ["src", "media.d.ts"]
+  "include": ["src", "media.d.ts"],
+  "exclude": ["node_modules"]
 }
