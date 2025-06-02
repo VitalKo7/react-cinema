@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useState } from 'react';
+import React, { createContext, useEffect } from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -14,23 +14,21 @@ import store from './Redux/store';
 export const Films = createContext([]);
 
 function App() {
-  const [films, changeFilms] = useState([]);
-
-  useEffect(() => {
-    async function FetchFilms() {
-      await fetch('https://676c1c82bc36a202bb86c01d.mockapi.io/movies')
-        .then(data => {
-          return data.json();
-        })
-        .then(data => {
-          changeFilms(data);
-        })
-        .catch(error => {
-          console.error(error);
-        });
-    }
-    FetchFilms();
-  }, []);
+  // useEffect(() => {
+  //   async function FetchFilms() {
+  //     await fetch('https://676c1c82bc36a202bb86c01d.mockapi.io/movies')
+  //       .then(data => {
+  //         return data.json();
+  //       })
+  //       .then(data => {
+  //         changeFilms(data);
+  //       })
+  //       .catch(error => {
+  //         console.error(error);
+  //       });
+  //   }
+  //   FetchFilms();
+  // }, []);
 
   return (
     <>
